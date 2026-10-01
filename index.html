@@ -10,6 +10,25 @@
     <main class="contenedor">
       <h1>Sistema de Registro de Estudiantes</h1>
       <p class="subtitulo">Ejercicio 01 - Evolución Controlada de un Sistema Web</p>
+
+      <section class="formulario">
+        <label for="nombre">Nombre del estudiante:</label>
+        <input type="text" id="nombre" placeholder="Escribe el nombre" />
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" placeholder="Ej. Desarrollo de Software I" />
+
+        <button type="button" onclick="registrar()">Registrar estudiante</button>
+
+        <p id="mensaje"></p>
+      </section>
+
+      <section class="lista">
+        <h2>Estudiantes registrados</h2>
+        <ul id="listaEstudiantes"></ul>
+        <p id="vacio" class="vacio">Aún no hay estudiantes registrados.</p>
+      </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

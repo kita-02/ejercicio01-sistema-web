@@ -1,29 +1,49 @@
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #eef4fb;
-  text-align: center;
-  margin-top: 50px;
-  color: #22303f;
+.formulario {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+  text-align: left;
 }
 
-.contenedor {
-  background-color: #ffffff;
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  border-top: 5px solid #2c7be5;
+.formulario label {
+  font-size: 0.9rem;
+  color: #4a5b6c;
 }
 
-h1 {
-  color: #2c3e50;
-  font-size: 1.8rem;
-  margin-bottom: 6px;
-}
-
-.subtitulo {
-  color: #6b7c8d;
+input {
+  padding: 9px 10px;
+  border: 1px solid #ccd6e0;
+  border-radius: 6px;
   font-size: 0.95rem;
-  margin-top: 0;
+}
+
+button {
+  margin-top: 8px;
+  padding: 10px 16px;
+  background-color: #2c7be5;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c62c4;
+}
+
+#mensaje {
+  min-height: 18px;
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+}
+
+.exito {
+  color: #1e8e4e;
+}
+
+.error {
+  color: #d93025;
 }
