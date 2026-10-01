@@ -14,8 +14,17 @@
       <section class="formulario">
         <label for="nombre">Nombre del estudiante:</label>
         <input type="text" id="nombre" placeholder="Escribe el nombre" />
+
         <label for="curso">Curso:</label>
-        <input type="text" id="curso" placeholder="Ej. Desarrollo de Software I" />
+        <select id="curso">
+          <option value="">Seleccione un curso</option>
+          <option value="Desarrollo de Software I">Desarrollo de Software I</option>
+          <option value="Base de Datos">Base de Datos</option>
+          <option value="Redes y Telecomunicaciones">Redes y Telecomunicaciones</option>
+        </select>
+
+        <label for="nota">Nota final (0 - 20):</label>
+        <input type="number" id="nota" min="0" max="20" step="0.5" placeholder="Ej. 15.5" />
 
         <button type="button" onclick="registrar()">Registrar estudiante</button>
 
@@ -24,8 +33,16 @@
 
       <section class="lista">
         <h2>Estudiantes registrados</h2>
+
+        <div class="resumen">
+          <span>Total: <strong id="total">0</strong></span>
+          <span>Promedio: <strong id="promedio">0.00</strong></span>
+        </div>
+
         <ul id="listaEstudiantes"></ul>
         <p id="vacio" class="vacio">Aún no hay estudiantes registrados.</p>
+
+        <button type="button" class="secundario" onclick="limpiarTodo()">Limpiar lista</button>
       </section>
     </main>
 
